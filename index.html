@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="asset/RAIOT_LOGO.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RaIoT Labs</title>
+  </head>
+  <body class="font-[Poppins]">
+    <div class="container w-[100%]">
+      <section class="page1 home relative">
+        <header class="bg-black border-b-2 border-gray-500 z-20">
+          <nav class="flex justify-between items-center w-[92%] m-auto">
+            <div class="flex items-center gap-4">
+              <img class="w-24" src="asset/RAIOT_LOGO.png" alt="raiot_logo" />
+              <div class="typewriter">
+                <p class="text-white text-2xl font-medium">RaIoT</p>
+              </div>
+            </div>
+            <div
+              class="nav-links md:static absolute bg-black md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+            >
+              <ul
+                class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
+              >
+                <li
+                  class="flex items-center gap-4 hover:border-b-2 border-lime-500"
+                >
+                  <ion-icon
+                    class="md:hidden text-3xl text-lime-500"
+                    name="home-outline"
+                  ></ion-icon>
+                  <a class="text-white hover:text-lime-200" href="">Home</a>
+                </li>
+                <li
+                  class="flex items-center gap-4 hover:border-b-2 border-lime-500"
+                >
+                  <ion-icon
+                    class="md:hidden text-3xl text-lime-500"
+                    name="rocket-outline"
+                  ></ion-icon>
+                  <a class="text-white hover:text-lime-200" href="">Projects</a>
+                </li>
+                <li
+                  class="flex items-center gap-4 hover:border-b-2 border-lime-500"
+                >
+                  <ion-icon
+                    class="md:hidden text-3xl text-lime-500"
+                    name="people-outline"
+                  ></ion-icon>
+                  <a class="text-white hover:text-lime-200" href="">Team</a>
+                </li>
+                <li
+                  class="flex items-center gap-4 hover:border-b-2 border-lime-500"
+                >
+                  <ion-icon
+                    class="md:hidden text-3xl text-lime-500"
+                    name="megaphone-outline"
+                  ></ion-icon>
+                  <a class="text-white hover:text-lime-200" href="">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-6">
+              <button class="btn">
+                <svg
+                  height="24"
+                  width="24"
+                  fill="#FFFFFF"
+                  viewBox="0 0 24 24"
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  class="sparkle"
+                >
+                  <path
+                    d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"
+                  ></path>
+                </svg>
+
+                <span class="text_a">Register</span>
+              </button>
+              <input type="checkbox" id="checkbox" class="md:hidden" />
+              <label
+                for="checkbox"
+                class="toggle gap-2 md:hidden"
+                onclick="onToggleMenu(this)"
+              >
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+              </label>
+              <!-- <ion-icon
+            class="text-white text-3xl cursor-pointer md:hidden"
+            name="menu-outline"
+            onclick="onToggleMenu(this)"
+          ></ion-icon> -->
+            </div>
+          </nav>
+        </header>
+        <div
+          class="hero h-[80%] flex flex-col items-center py-12 gap-6 pt-12 md:pt-8 md:px-20"
+        >
+          <p
+            class="text-6xl md:text-8xl text-center bg-gradient-to-r from-rose-600 to-amber-400 text-transparent bg-clip-text font-semibold"
+          >
+            Robotics And Internet Of Things Lab
+          </p>
+          <p class="text-white text-center font-semibold md:text-2xl">
+            The One And Only Robotics Club Of Amity University Rajasthan
+          </p>
+          <button class="btn">
+            <svg
+              height="24"
+              width="24"
+              fill="#FFFFFF"
+              viewBox="0 0 24 24"
+              data-name="Layer 1"
+              id="Layer_"
+              class="sparkle"
+            >
+              <path
+                d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"
+              ></path>
+            </svg>
+
+            <span class="text_a">Register</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="page2 about_us_sec flex flex-col items-center md:pt-20 gap-8 md:px-28 px-12 relative pt-4"
+      >
+        <div class="flex flex-col gap-2">
+          <p
+            class="font-bold md:text-5xl text-4xl text-center text-fuchsia-500"
+          >
+            ABOUT US
+          </p>
+          <p class="text-white text-justify md:font-semibold md:text-xl">
+            At RaIoT Lab, we are passionate about exploring the limitless
+            possibilities that robotics offers. Our club is a diverse community
+            of students, engineers, and enthusiasts who share a common interest
+            in robotics and automation. Whether you're a seasoned robotics
+            expert or a newcomer eager to learn, we welcome individuals from all
+            backgrounds and skill levels.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p
+            class="font-bold md:text-5xl text-4xl text-center text-fuchsia-500"
+          >
+            OUR MISSION
+          </p>
+          <p class="text-white text-justify md:font-semibold md:text-xl">
+            Our mission is to foster a collaborative environment where members
+            can enhance their robotics knowledge, develop technical skills, and
+            engage in exciting projects that push the boundaries of innovation.
+            We believe in the power of robotics to shape the future and aim to
+            inspire the next generation of leaders in the field.
+          </p>
+        </div>
+      </section>
+      <section
+        class="page2_1 flex flex-col items-center md:px-12 md:gap-4 px-12"
+      >
+        <p
+          class="font-bold md:text-5xl text-4xl text-center text-fuchsia-500 md:py-4"
+        >
+          WHAT WE DO
+        </p>
+        <div>
+          <p class="text-rose-500 font-semibold">1. Hands-On Projects:</p>
+          <p
+            class="text-white hover:text-sky-200 transition ease-in-out text-justify text-xs md:text-base"
+          >
+            Dive into practical, real-world applications of robotics through our
+            hands-on projects. From building simple robots to tackling complex
+            challenges, our club provides a platform for you to apply
+            theoretical knowledge to tangible creations.
+          </p>
+        </div>
+        <div>
+          <p class="text-rose-500 font-semibold">2. Workshops and Training:</p>
+          <p
+            class="text-white hover:text-sky-200 transition ease-in-out text-justify text-xs md:text-base"
+          >
+            Stay at the forefront of robotics technology with our workshops and
+            training sessions. Led by experienced members and invited experts,
+            these sessions cover a wide range of topics, including programming,
+            electronics, and mechanical design.
+          </p>
+        </div>
+        <div>
+          <p class="text-rose-500 font-semibold">3. Competitions:</p>
+          <p
+            class="text-white hover:text-sky-200 transition ease-in-out text-justify text-xs md:text-base"
+          >
+            Put your skills to the test by participating in local and national
+            robotics competitions. Our club actively seeks opportunities for
+            members to showcase their talents and compete against other robotics
+            enthusiasts.
+          </p>
+        </div>
+        <div>
+          <p class="text-rose-500 font-semibold">
+            4. Guest Speakers and Events:
+          </p>
+          <p
+            class="text-white hover:text-sky-200 transition ease-in-out text-justify text-xs md:text-base"
+          >
+            Connect with professionals and experts in the field through guest
+            speaker events. Learn about the latest trends, advancements, and
+            career opportunities in robotics, and expand your network within the
+            robotics community.
+          </p>
+        </div>
+        <div>
+          <p class="text-rose-500 font-semibold">5. Community Outreach:</p>
+          <p
+            class="text-white hover:text-sky-200 transition ease-in-out text-justify text-xs md:text-base"
+          >
+            We believe in giving back to the community. Engage in outreach
+            programs where we use robotics as a tool to inspire and educate
+            others. Whether it's hosting robotics workshops for local schools or
+            participating in community events, we strive to make a positive
+            impact.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="page3 what_we_do_sec flex items-center flex-col justify-center gap-6 px-10"
+      >
+        <p class="text-white text-center text-5xl font-bold">Who Can Join?</p>
+        <div>
+          <p
+            class="text-2xl md:text-3xl text-center bg-gradient-to-r from-pink-400 to-red-400 text-transparent bg-clip-text font-bold"
+          >
+            All Years
+          </p>
+          <p class="text-white text-center font-semibold tracking-wide">
+            Students Of All Years Can Join.
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-2xl md:text-3xl text-center bg-gradient-to-r from-pink-400 to-red-400 text-transparent bg-clip-text font-bold"
+          >
+            No Previous Experience Required
+          </p>
+          <p class="text-white text-center font-semibold tracking-wide">
+            No Previous Experience Is Necessary, But is appreciated. But
+            enthusiasm to Learn Is Compulsory
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-2xl md:text-3xl text-center bg-gradient-to-r from-pink-400 to-red-400 text-transparent bg-clip-text font-bold"
+          >
+            Should Be A Student Of Amity University Rajasthan
+          </p>
+          <p class="text-white text-center font-semibold tracking-wide">
+            Only Students of Amity University Can Join as per Guidelines from
+            the University
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-2xl md:text-3xl text-center bg-gradient-to-r from-pink-400 to-red-400 text-transparent bg-clip-text font-bold"
+          >
+            Laptop Is Mandatory
+          </p>
+          <p class="text-white text-center font-semibold tracking-wide">
+            You Must at least have a portable device that you can carry to the
+            lab, on which you can code
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="page4 who_c_j_sec flex flex-col gap-12 items-center justify-center p-16"
+      >
+        <p
+          class="text-6xl md:text-8xl text-center bg-gradient-to-r from-yellow-400 to-lime-400 text-transparent bg-clip-text font-bold"
+        >
+          EXCITED ?
+        </p>
+        <p class="text-white text-center text-2xl font-semibold tracking-wide">
+          See Our Projects and Bless Your Eyes!
+        </p>
+        <button class="btn">
+          <svg
+            height="24"
+            width="24"
+            fill="#FFFFFF"
+            viewBox="0 0 24 24"
+            data-name="Layer 1"
+            id="Layer"
+            class="sparkle"
+          >
+            <path
+              d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"
+            ></path>
+          </svg>
+
+          <span class="text_a">Projects</span>
+        </button>
+      </section>
+
+      <section class="h-screen page5">
+        <div class="w-[100%] flex h-[60%]">
+          <div
+            class="w-1/2 bg-black flex flex-col items-center justify-center md:gap-8"
+          >
+            <div class="flex items-center gap-4">
+              <ion-icon
+                class="text-lime-400 text-base md:text-6xl"
+                name="mail-outline"
+              ></ion-icon>
+              <p class="text-center md:text-5xl text-white font-bold">
+                contact us
+              </p>
+            </div>
+            <p class="text-center md:text-2xl text-white font-semibold text-sm">
+              Our Official Mail ID :
+            </p>
+            <p
+              class="md:text-3xl text-center bg-gradient-to-r from-yellow-600 to-amber-400 text-transparent bg-clip-text font-semibold text-xs"
+            >
+              adityashailendra4777@gmail.com
+            </p>
+          </div>
+          <div
+            class="w-1/2 bg-black flex flex-col justify-center items-center gap-10"
+          >
+            <div class="flex md:gap-6 gap-3 items-center">
+              <ion-icon
+                class="md:text-4xl md:font-semibold text-purple-400"
+                name="share-social-outline"
+              ></ion-icon>
+              <p class="text-purple-400 md:text-4xl md:font-semibold">
+                social handles :
+              </p>
+            </div>
+
+            <div class="flex gap-6 w-[100%] items-center justify-center">
+              <div class="tooltip-container md:w-[9%]">
+                <div class="tooltip">
+                  <div class="profile">
+                    <div class="user">
+                      <div class="img">s</div>
+                      <div class="details">
+                        <div class="name">User</div>
+                        <div class="username">@username</div>
+                      </div>
+                    </div>
+                    <div class="about">800+ Followers</div>
+                  </div>
+                </div>
+                <div class="text">
+                  <a class="icon" href="#">
+                    <div class="layer">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span class="instagramSVG">
+                        <svg
+                          fill="white"
+                          class="svgIcon"
+                          viewBox="0 0 448 512"
+                          height="1.5em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="text">Instagram</div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="tooltip-container_2 md:w-[9%]">
+                <div class="tooltip_2">
+                  <div class="profile_2">
+                    <div class="user_2">
+                      <div class="img_2">s</div>
+                      <div class="details_2">
+                        <div class="name_2">User</div>
+                        <div class="username_2">@username</div>
+                      </div>
+                    </div>
+                    <div class="about_2">500+ Connections</div>
+                  </div>
+                </div>
+                <div class="text_2">
+                  <a class="icon_2">
+                    <div class="layer_2">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span
+                        class="fab_2 fa-linkedin_2 flex justify-center items-center"
+                      >
+                        <svg viewBox="0 0 448 512" height="1em">
+                          <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="text_2">LinkedIn</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black h-[30%] flex justify-center items-center px-12 gap-10 w-[100%]"
+        >
+          <div class="flex justify-center items-center">
+            <img class="w-[100%]" src="asset/RAIOT_LOGO.png" alt="..." />
+          </div>
+          <div class="flex justify-center items-center">
+            <img
+              class="w-[100%] md:w-[60%]"
+              src="asset/Amity-logo.svg"
+              alt="...."
+            />
+          </div>
+        </div>
+        <div class="bg-black h-[10%] flex items-center justify-center">
+          <p class="text-white">&#169;2023 RaIoT. All rights reserved.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- js linkages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline";
+        navLinks.classList.toggle("top-[15%]");
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
